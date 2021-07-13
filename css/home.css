@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.medialink>a[href="/home.html"]{
+    border-bottom: 2px solid white;
+}
+
+@media screen and (max-width:1029px){
+
+    .show-menu-link>a[href="/home.html"]{
+        color: rgb(255, 60, 0);
+        border-bottom: 2px solid rgb(255, 102, 0);
+    }
+}
+
+#headsection{
+    background-image: url("https://i.pinimg.com/originals/12/64/86/126486aa0b856871e4772505f9f2fee6.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+
+#firstsection{
+    display: flex;
+    justify-content: flex-start;
+    padding: 300px 20%;
+}
+
+#firstcontain{
+    padding: 20px;
+    font-size: 40px;
+    color: #ffff;
+    font-family: sans-serif;
+    line-height: 50px;
+}
+#firstcontain>.smallcontain{
+    padding: 20px 0px;
+    font-size: 20px;
+}
+#firstcontain>button{
+    padding: 15px 25px;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.4s;
+}
+#firstcontain>.hireus{
+    border: 2px solid white;
+    background: none;
+    color: white;
+    
+}
+#firstcontain>.hireus:hover{
+    background-color: white;
+    color: black;
+}
+#firstcontain>.ourservice:hover{
+    border: 2px solid white;
+    background: none;
+    color: white;
+}
+
+/* ================================================================================ */
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+    background-color: white;
+}
+#secondsection{
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+    
+}
+#secondimg{
+    flex: 50%;
+}
+#secondcontain{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 1%;
+    line-height: 35px;
+    font-family: sans-serif;
+}
+#secongimg>img{
+    width: 90%; 
+}
+
+#ourcontain{
+    display: flex; 
+}
+#aboutus{
+    padding: 10px 0px;
+}
+#aboutus>h1{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+#aboutus>p{
+    color: grey;
+}
+.ourcontain>i{
+    padding: 20px 0px;
+    color: orange;
+}
+.ourcontain>p{
+    color: grey;
+}
+
+/* ========================================================= */
+#section3{
+    background-color: rgb(235, 235, 235);
+}
+.whatwedo{
+    text-align: center;
+    padding: 0% 15%;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.whatwedo>h1{
+    font-size: 40px;
+}
+.whatwedo>p{
+    font-size: large;
+    padding-top: 20px;
+    color: grey;
+}
+#thirdcontain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thirdcontain{
+    background-color: aliceblue;
+    margin: 15px;
+    max-width: 400px;
+    box-shadow: 0px 0px 2px 0px grey;
+    transition: 0.5s;
+}
+
+.thirdcontain:hover{
+    box-shadow: 0px 0px 8px 0px grey;
+}
+
+.thirdcontain>img{
+    width: 100%;
+    cursor: pointer;
+}
+.thirdtext{
+    padding: 20px;
+    line-height: 25px;
+}
+.thirdtext>h2{
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thirdtext>p{
+    color: grey;
+    padding-bottom: 20px;
+}
+.thirdtext>h2:hover{
+    color: orangered;
+}
+.thirdtext>button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    color: orangered;
+}

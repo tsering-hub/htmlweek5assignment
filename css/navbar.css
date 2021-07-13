@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    color: #ffff;
+    transition: all 0.5s;
+}
+#logo:hover{
+    color: orange;
+}
+
+#navbar{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.5s;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.link{
+    color: rgb(200, 230, 255);
+    margin: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+.medialink{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#searchbox{
+    z-index: 0;
+    position: relative;
+    top: -5px;
+    padding: 0px 10px;
+}
+#search{
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border-radius: 25px;
+    background-color: white;
+
+}
+
+
+#searchicon{
+    position: absolute;
+    right: 28px;
+    top: 19px;
+    z-index: 1;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    background-color: none;
+}
+#searchicon:hover{
+    color: black;
+}
+
+.link2{
+    padding: 10px;
+    color: #ffff;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+#menuicon{
+    background-color: orange ;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.link:hover{
+    border-bottom: 2px solid rgb(214, 203, 203);
+    
+}
+#moonicon:hover{
+    color: orange;
+}
+
+
+
+#navbar.sticky{
+    background-color: rgb(165, 165, 165);
+    padding: 10px 20px 0px;
+    
+}
+#navbar.sticky a{
+    color: black;
+}
+
+
+
+
+/* media query  */
+@media screen and (max-width:1029px){
+    #menuicon{
+        display: block;
+    }
+
+    .medialink{
+        display: none;
+    }
+    .show-menu-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        width: 90%;
+        background-color: rgb(165, 165, 165);
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        padding:2% 5%;
+        
+    }
+    
+    .show-menu-link>.link{
+        width: 100px;
+        text-align: left;
+        color: black;
+        padding: 10px;
+        margin: 10px 140px;
+    }
+   
+    .show-menu-link>.link:hover{
+        color: rgb(255, 102, 0);
+        border-bottom: 2px solid rgb(255, 102, 0);
+    }
+
+    #searchbox{
+        width: 500px;
+        padding: 10px;
+      
+    }
+    #searchicon{
+        position: relative;
+        right:35px;
+        top:0px;
+        z-index: 1;
+        border: none;
+        color: orange;
+        cursor: pointer;
+        background-color: none;
+    }
+
+}
